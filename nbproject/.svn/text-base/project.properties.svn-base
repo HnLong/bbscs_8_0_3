@@ -1,0 +1,237 @@
+annotation.processing.enabled=true
+annotation.processing.enabled.in.editor=true
+annotation.processing.processors.list=
+annotation.processing.run.all.processors=true
+annotation.processing.source.output=${build.generated.sources.dir}/ap-source-output
+build.classes.dir=${build.web.dir}/WEB-INF/classes
+build.classes.excludes=**/*.java,**/*.form
+build.dir=build
+build.generated.dir=${build.dir}/generated
+build.generated.sources.dir=${build.dir}/generated-sources
+build.test.classes.dir=${build.dir}/test/classes
+build.test.results.dir=${build.dir}/test/results
+build.web.dir=${build.dir}/web
+build.web.excludes=${build.classes.excludes}
+buildfile=nbbuild.xml
+client.urlPart=
+compile.jsps=false
+conf.dir=conf
+debug.classpath=${build.classes.dir}:${javac.classpath}
+debug.test.classpath=\
+    ${run.test.classpath}
+display.browser=true
+dist.dir=dist
+dist.ear.war=${dist.dir}/${war.ear.name}
+dist.javadoc.dir=${dist.dir}/javadoc
+dist.war=${dist.dir}/${war.name}
+endorsed.classpath=\
+    ${libs.javaee-endorsed-api-6.0.classpath}
+excludes=
+file.reference.activation.jar=webapps-bbscs/root/WEB-INF/lib/activation.jar
+file.reference.ant-1.6.5.jar=webapps-bbscs/root/WEB-INF/lib/ant-1.6.5.jar
+file.reference.ant-antlr-1.6.5.jar=webapps-bbscs/root/WEB-INF/lib/ant-antlr-1.6.5.jar
+file.reference.ant-junit-1.6.5.jar=webapps-bbscs/root/WEB-INF/lib/ant-junit-1.6.5.jar
+file.reference.ant-launcher-1.6.5.jar=webapps-bbscs/root/WEB-INF/lib/ant-launcher-1.6.5.jar
+file.reference.ant-swing-1.6.5.jar=webapps-bbscs/root/WEB-INF/lib/ant-swing-1.6.5.jar
+file.reference.antlr-2.7.6.jar=webapps-bbscs/root/WEB-INF/lib/antlr-2.7.6.jar
+file.reference.asm-attrs.jar=webapps-bbscs/root/WEB-INF/lib/asm-attrs.jar
+file.reference.asm.jar=webapps-bbscs/root/WEB-INF/lib/asm.jar
+file.reference.bbscs8.jar=webapps-bbscs/root/WEB-INF/lib/bbscs8.jar
+file.reference.bbscs_8_0_3-bbscs-src=bbscs-src
+file.reference.c3p0-0.9.1.jar=webapps-bbscs/root/WEB-INF/lib/c3p0-0.9.1.jar
+file.reference.cglib-2.1.3.jar=webapps-bbscs/root/WEB-INF/lib/cglib-2.1.3.jar
+file.reference.checkstyle-all.jar=webapps-bbscs/root/WEB-INF/lib/checkstyle-all.jar
+file.reference.cleanimports.jar=webapps-bbscs/root/WEB-INF/lib/cleanimports.jar
+file.reference.commons-beanutils-1.6.jar=webapps-bbscs/root/WEB-INF/lib/commons-beanutils-1.6.jar
+file.reference.commons-chain-1.1.jar=webapps-bbscs/root/WEB-INF/lib/commons-chain-1.1.jar
+file.reference.commons-collections-2.1.1.jar=webapps-bbscs/root/WEB-INF/lib/commons-collections-2.1.1.jar
+file.reference.commons-email-1.0.jar=webapps-bbscs/root/WEB-INF/lib/commons-email-1.0.jar
+file.reference.commons-fileupload-1.2.jar=webapps-bbscs/root/WEB-INF/lib/commons-fileupload-1.2.jar
+file.reference.commons-io-1.3.1.jar=webapps-bbscs/root/WEB-INF/lib/commons-io-1.3.1.jar
+file.reference.commons-lang-2.3.jar=webapps-bbscs/root/WEB-INF/lib/commons-lang-2.3.jar
+file.reference.commons-logging-1.0.4.jar=webapps-bbscs/root/WEB-INF/lib/commons-logging-1.0.4.jar
+file.reference.commons-logging-api-1.1.jar=webapps-bbscs/root/WEB-INF/lib/commons-logging-api-1.1.jar
+file.reference.commons-validator-1.3.0.jar=webapps-bbscs/root/WEB-INF/lib/commons-validator-1.3.0.jar
+file.reference.concurrent-1.3.2.jar=webapps-bbscs/root/WEB-INF/lib/concurrent-1.3.2.jar
+file.reference.connector.jar=webapps-bbscs/root/WEB-INF/lib/connector.jar
+file.reference.dom4j-1.6.1.jar=webapps-bbscs/root/WEB-INF/lib/dom4j-1.6.1.jar
+file.reference.ehcache-1.2.3.jar=webapps-bbscs/root/WEB-INF/lib/ehcache-1.2.3.jar
+file.reference.ezmorph-1.0.1.jar=webapps-bbscs/root/WEB-INF/lib/ezmorph-1.0.1.jar
+file.reference.FCKeditor-2.3.jar=webapps-bbscs/root/WEB-INF/lib/FCKeditor-2.3.jar
+file.reference.freemarker-2.3.8.jar=webapps-bbscs/root/WEB-INF/lib/freemarker-2.3.8.jar
+file.reference.hibernate3.jar=webapps-bbscs/root/WEB-INF/lib/hibernate3.jar
+file.reference.jaas.jar=webapps-bbscs/root/WEB-INF/lib/jaas.jar
+file.reference.jacc-1_0-fr.jar=webapps-bbscs/root/WEB-INF/lib/jacc-1_0-fr.jar
+file.reference.javassist.jar=webapps-bbscs/root/WEB-INF/lib/javassist.jar
+file.reference.jaxen-1.1-beta-7.jar=webapps-bbscs/root/WEB-INF/lib/jaxen-1.1-beta-7.jar
+file.reference.jdbc2_0-stdext.jar=webapps-bbscs/root/WEB-INF/lib/jdbc2_0-stdext.jar
+file.reference.jdom.jar=webapps-bbscs/root/WEB-INF/lib/jdom.jar
+file.reference.jgroups-2.2.8.jar=webapps-bbscs/root/WEB-INF/lib/jgroups-2.2.8.jar
+file.reference.json-lib-1.1-jdk15.jar=webapps-bbscs/root/WEB-INF/lib/json-lib-1.1-jdk15.jar
+file.reference.jta.jar=webapps-bbscs/root/WEB-INF/lib/jta.jar
+file.reference.junit-3.8.1.jar=webapps-bbscs/root/WEB-INF/lib/junit-3.8.1.jar
+file.reference.log4j-1.2.11.jar=webapps-bbscs/root/WEB-INF/lib/log4j-1.2.11.jar
+file.reference.mail.jar=webapps-bbscs/root/WEB-INF/lib/mail.jar
+file.reference.mysql-connector-java-5.1.5-bin.jar=webapps-bbscs/root/WEB-INF/lib/mysql-connector-java-5.1.5-bin.jar
+file.reference.ognl-2.6.11.jar=webapps-bbscs/root/WEB-INF/lib/ognl-2.6.11.jar
+file.reference.ojdbc14.jar=webapps-bbscs/root/WEB-INF/lib/ojdbc14.jar
+file.reference.oro-2.0.8.jar=webapps-bbscs/root/WEB-INF/lib/oro-2.0.8.jar
+file.reference.oscache-2.1.jar=webapps-bbscs/root/WEB-INF/lib/oscache-2.1.jar
+file.reference.proxool-0.8.3.jar=webapps-bbscs/root/WEB-INF/lib/proxool-0.8.3.jar
+file.reference.quartz-all-1.5.2.jar=webapps-bbscs/root/WEB-INF/lib/quartz-all-1.5.2.jar
+file.reference.rome-0.8.jar=webapps-bbscs/root/WEB-INF/lib/rome-0.8.jar
+file.reference.spring-aspects.jar=webapps-bbscs/root/WEB-INF/lib/spring-aspects.jar
+file.reference.spring-mock.jar=webapps-bbscs/root/WEB-INF/lib/spring-mock.jar
+file.reference.spring.jar=webapps-bbscs/root/WEB-INF/lib/spring.jar
+file.reference.struts-core-1.3.5.jar=webapps-bbscs/root/WEB-INF/lib/struts-core-1.3.5.jar
+file.reference.struts2-codebehind-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-codebehind-plugin-2.0.9.jar
+file.reference.struts2-config-browser-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-config-browser-plugin-2.0.9.jar
+file.reference.struts2-core-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-core-2.0.9.jar
+file.reference.struts2-pell-multipart-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-pell-multipart-plugin-2.0.9.jar
+file.reference.struts2-plexus-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-plexus-plugin-2.0.9.jar
+file.reference.struts2-sitegraph-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-sitegraph-plugin-2.0.9.jar
+file.reference.struts2-sitemesh-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-sitemesh-plugin-2.0.9.jar
+file.reference.struts2-spring-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-spring-plugin-2.0.9.jar
+file.reference.struts2-struts1-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-struts1-plugin-2.0.9.jar
+file.reference.struts2-tiles-plugin-2.0.9.jar=webapps-bbscs/root/WEB-INF/lib/struts2-tiles-plugin-2.0.9.jar
+file.reference.swarmcache-1.0rc2.jar=webapps-bbscs/root/WEB-INF/lib/swarmcache-1.0rc2.jar
+file.reference.syndiag2.jar=webapps-bbscs/root/WEB-INF/lib/syndiag2.jar
+file.reference.tiles-api-2.0.4.jar=webapps-bbscs/root/WEB-INF/lib/tiles-api-2.0.4.jar
+file.reference.tiles-core-2.0.4.jar=webapps-bbscs/root/WEB-INF/lib/tiles-core-2.0.4.jar
+file.reference.tiles-jsp-2.0.4.jar=webapps-bbscs/root/WEB-INF/lib/tiles-jsp-2.0.4.jar
+file.reference.urlrewrite-2.6.0.jar=webapps-bbscs/root/WEB-INF/lib/urlrewrite-2.6.0.jar
+file.reference.versioncheck.jar=webapps-bbscs/root/WEB-INF/lib/versioncheck.jar
+file.reference.xml-apis.jar=webapps-bbscs/root/WEB-INF/lib/xml-apis.jar
+file.reference.xwork-2.0.4.jar=webapps-bbscs/root/WEB-INF/lib/xwork-2.0.4.jar
+includes=**
+j2ee.compile.on.save=true
+j2ee.copy.static.files.on.save=true
+j2ee.deploy.on.save=true
+j2ee.platform=1.6-web
+j2ee.platform.classpath=${j2ee.server.home}/lib/annotations-api.jar:${j2ee.server.home}/lib/catalina-ant.jar:${j2ee.server.home}/lib/catalina-ha.jar:${j2ee.server.home}/lib/catalina-tribes.jar:${j2ee.server.home}/lib/catalina.jar:${j2ee.server.home}/lib/ecj-3.7.jar:${j2ee.server.home}/lib/el-api.jar:${j2ee.server.home}/lib/jasper-el.jar:${j2ee.server.home}/lib/jasper.jar:${j2ee.server.home}/lib/jsp-api.jar:${j2ee.server.home}/lib/servlet-api.jar:${j2ee.server.home}/lib/tomcat-api.jar:${j2ee.server.home}/lib/tomcat-coyote.jar:${j2ee.server.home}/lib/tomcat-dbcp.jar:${j2ee.server.home}/lib/tomcat-i18n-es.jar:${j2ee.server.home}/lib/tomcat-i18n-fr.jar:${j2ee.server.home}/lib/tomcat-i18n-ja.jar:${j2ee.server.home}/lib/tomcat-jdbc.jar:${j2ee.server.home}/lib/tomcat-util.jar
+j2ee.server.type=Tomcat
+jar.compress=false
+java.source.based=true
+javac.classpath=\
+    ${file.reference.activation.jar}:\
+    ${file.reference.ant-swing-1.6.5.jar}:\
+    ${file.reference.commons-chain-1.1.jar}:\
+    ${file.reference.quartz-all-1.5.2.jar}:\
+    ${file.reference.oro-2.0.8.jar}:\
+    ${file.reference.commons-email-1.0.jar}:\
+    ${file.reference.javassist.jar}:\
+    ${file.reference.syndiag2.jar}:\
+    ${file.reference.xwork-2.0.4.jar}:\
+    ${file.reference.dom4j-1.6.1.jar}:\
+    ${file.reference.ognl-2.6.11.jar}:\
+    ${file.reference.struts2-spring-plugin-2.0.9.jar}:\
+    ${file.reference.jgroups-2.2.8.jar}:\
+    ${file.reference.ant-antlr-1.6.5.jar}:\
+    ${file.reference.jaxen-1.1-beta-7.jar}:\
+    ${file.reference.struts2-struts1-plugin-2.0.9.jar}:\
+    ${file.reference.commons-fileupload-1.2.jar}:\
+    ${file.reference.jacc-1_0-fr.jar}:\
+    ${file.reference.ant-1.6.5.jar}:\
+    ${file.reference.struts2-pell-multipart-plugin-2.0.9.jar}:\
+    ${file.reference.bbscs8.jar}:\
+    ${file.reference.asm.jar}:\
+    ${file.reference.struts2-tiles-plugin-2.0.9.jar}:\
+    ${file.reference.tiles-jsp-2.0.4.jar}:\
+    ${file.reference.tiles-core-2.0.4.jar}:\
+    ${file.reference.struts-core-1.3.5.jar}:\
+    ${file.reference.commons-logging-1.0.4.jar}:\
+    ${file.reference.xml-apis.jar}:\
+    ${file.reference.struts2-core-2.0.9.jar}:\
+    ${file.reference.rome-0.8.jar}:\
+    ${file.reference.junit-3.8.1.jar}:\
+    ${file.reference.mysql-connector-java-5.1.5-bin.jar}:\
+    ${file.reference.proxool-0.8.3.jar}:\
+    ${file.reference.oscache-2.1.jar}:\
+    ${file.reference.ojdbc14.jar}:\
+    ${file.reference.jaas.jar}:\
+    ${file.reference.commons-validator-1.3.0.jar}:\
+    ${file.reference.struts2-config-browser-plugin-2.0.9.jar}:\
+    ${file.reference.hibernate3.jar}:\
+    ${file.reference.mail.jar}:\
+    ${file.reference.concurrent-1.3.2.jar}:\
+    ${file.reference.struts2-sitemesh-plugin-2.0.9.jar}:\
+    ${file.reference.connector.jar}:\
+    ${file.reference.commons-lang-2.3.jar}:\
+    ${file.reference.freemarker-2.3.8.jar}:\
+    ${file.reference.struts2-codebehind-plugin-2.0.9.jar}:\
+    ${file.reference.asm-attrs.jar}:\
+    ${file.reference.commons-beanutils-1.6.jar}:\
+    ${file.reference.cleanimports.jar}:\
+    ${file.reference.json-lib-1.1-jdk15.jar}:\
+    ${file.reference.struts2-plexus-plugin-2.0.9.jar}:\
+    ${file.reference.urlrewrite-2.6.0.jar}:\
+    ${file.reference.c3p0-0.9.1.jar}:\
+    ${file.reference.versioncheck.jar}:\
+    ${file.reference.ant-junit-1.6.5.jar}:\
+    ${file.reference.spring.jar}:\
+    ${file.reference.cglib-2.1.3.jar}:\
+    ${file.reference.log4j-1.2.11.jar}:\
+    ${file.reference.spring-mock.jar}:\
+    ${file.reference.FCKeditor-2.3.jar}:\
+    ${file.reference.ehcache-1.2.3.jar}:\
+    ${file.reference.struts2-sitegraph-plugin-2.0.9.jar}:\
+    ${file.reference.spring-aspects.jar}:\
+    ${file.reference.tiles-api-2.0.4.jar}:\
+    ${file.reference.antlr-2.7.6.jar}:\
+    ${file.reference.commons-logging-api-1.1.jar}:\
+    ${file.reference.ant-launcher-1.6.5.jar}:\
+    ${file.reference.jdom.jar}:\
+    ${file.reference.commons-collections-2.1.1.jar}:\
+    ${file.reference.swarmcache-1.0rc2.jar}:\
+    ${file.reference.ezmorph-1.0.1.jar}:\
+    ${file.reference.commons-io-1.3.1.jar}:\
+    ${file.reference.jdbc2_0-stdext.jar}:\
+    ${file.reference.jta.jar}:\
+    ${file.reference.checkstyle-all.jar}
+# Space-separated list of extra javac options
+javac.compilerargs=
+javac.debug=true
+javac.deprecation=false
+javac.processorpath=\
+    ${javac.classpath}
+javac.source=1.6
+javac.target=1.6
+javac.test.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}:\
+    ${libs.junit.classpath}:\
+    ${libs.junit_4.classpath}
+javac.test.processorpath=\
+    ${javac.test.classpath}
+javadoc.additionalparam=
+javadoc.author=false
+javadoc.encoding=${source.encoding}
+javadoc.noindex=false
+javadoc.nonavbar=false
+javadoc.notree=false
+javadoc.preview=true
+javadoc.private=false
+javadoc.splitindex=true
+javadoc.use=true
+javadoc.version=false
+javadoc.windowtitle=
+lib.dir=webapps-bbscs/root/WEB-INF/lib
+no.dependencies=false
+persistence.xml.dir=${conf.dir}
+platform.active=default_platform
+resource.dir=setup
+run.test.classpath=\
+    ${javac.test.classpath}:\
+    ${build.test.classes.dir}
+# Space-separated list of JVM arguments used when running a class with a main method or a unit test
+# (you may also define separate properties like run-sys-prop.name=value instead of -Dname=value):
+runmain.jvmargs=
+source.encoding=UTF-8
+source.root=.
+src.dir=${file.reference.bbscs_8_0_3-bbscs-src}
+test.src.dir=
+war.content.additional=
+war.ear.name=bbscs_8_0_3.war
+war.name=bbscs_8_0_3.war
+web.docbase.dir=webapps-bbscs/root
+webinf.dir=webapps-bbscs/root/WEB-INF

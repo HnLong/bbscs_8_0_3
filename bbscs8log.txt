@@ -1,0 +1,851 @@
+2012-12-06 09:58:28,992 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Application Run Path:C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/
+2012-12-06 09:58:29,001 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Use Urlrewrite:false
+2012-12-06 09:58:29,002 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Use Cluster:false
+2012-12-06 09:58:29,002 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - SERVLET MAPPING:*.bbscs
+2012-12-06 09:58:29,013 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Post Storage Mode:1
+2012-12-06 09:58:29,061 [main] [org.springframework.web.context.ContextLoader] [INFO] - Root WebApplicationContext: initialization started
+2012-12-06 09:58:29,112 [main] [org.springframework.core.CollectionFactory] [INFO] - JDK 1.4+ collections available
+2012-12-06 09:58:29,157 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2012-12-06 09:58:29,334 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from ServletContext resource [/WEB-INF/action-servlet.xml]
+2012-12-06 09:58:29,349 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [placeholderConfig,dataSource,sessionFactory,myTransactionManager,messageSource,sysOptionsValues,sysConfig,userConfig,forumConfig,sysStatService,userPermissionCache,sysListObjCache,boardCache,postCache,ipSeeker,ajaxMessagesJson,templateMail,userInfoFileIO,forumUploadFile,commendFileIO,subscibeQueue,tempConfiguration,userInfoDAO,configDAO,boardDAO,boardPermissionDAO,permissionDAO,roleDAO,userGroupDAO,userOnlineDAO,loginErrorDAO,userLevelDAO,boardSaveDAO,friendDAO,noteDAO,bookMarkDAO,forumMainDAO,forumHistoryDAO,subscibeDAO,voteDAO,voteItemDAO,voteUserDAO,forumBuyDAO,agreeAgainstDAO,commendDAO,boardAuthUserDAO,sysNumStatDAO,userTopDAO,eliteDAO,forumArchivesDAO,txProxyTemplate,userTarget,configTarget,permissionServiceTarget,roleServiceTarget,userGroupServiceTarget,userOnlineServiceTarget,loginErrorServiceTarget,userLevelServiceTarget,boardTarget,boardPermissionServiceTarget,boardSaveServiceTarget,friendServiceTarget,noteServiceTarget,bookMarkServiceTarget,forumServiceTarget,forumHistoryServiceTarget,subscibeServiceTarget,voteServiceTarget,voteItemServiceTarget,voteUserServiceTarget,agreeAgainstServiceTarget,commendServiceTarget,boardAuthUserServiceTarget,sysNumStatServiceTarget,userTopServiceTarget,eliteServiceTarget,forumArchivesServiceTarget,userService,configService,permissionService,roleService,userGroupService,userOnlineService,loginErrorService,userLevelService,boardService,boardPermissionService,boardSaveService,friendService,bookMarkService,forumService,forumHistoryService,subscibeService,voteService,voteItemService,voteUserService,agreeAgainstService,commendService,boardAuthUserService,sysNumStatService,userTopService,eliteService,forumArchivesService,friendFactory,noteService,noteFactory,bookMarkFactory,subscibeFactory,boardCount,loginErrorClear,voteUserClear,forumHistoryTimer,userOnlineClear,subscibeSend,boardCountTimerTask,loginErrorClearTimerTask,voteUserClearTimerTask,forumHistoryTimerTask,userOnlineClearTimerTask,subscibeSendTimerTask,timerFactory,sysNumStatJob,userTopFileJob,forumArchivesJob,sysNumStatJobCronTrigger,userTopFileJobCronTrigger,forumArchivesJobCronTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,regAction,regValidateAction,checkUserNameAction,loginAction,adminLogoutAction,adminOpenSetAction,adminWebsetAction,adminBaseSetAction,adminDateTimeFormatSetAction,adminCookiePassSetAction,adminScreenSetAction,adminEmailSetAction,adminUserRegSetAction,adminUserProSetAction,adminFaceSetAction,adminForbidSetAction,adminPostSetAction,adminAttachSetAction,adminVoteSetAction,adminPmSetAction,adminForumViewSetAction,adminPostViewSetAction,adminPostHiddenSetAction,adminUOTimeSetAction,adminUserLevelAction,adminBoardListAction,adminBoardSetAction,adminBoardMasterListAction,adminBoardMasterSetAction,adminBoardTagAction,adminBoardUgAction,adminPermissionAction,adminRoleAction,adminUgSetAction,adminUserSearchAction,nagAction,logoutAction,signSetAction,nickNameSetAction,userConfigSetAction,friendSetAction,noteAction,bookMarkAction,userFaceAction,userDetailSetAction,cpasswdAction,boardSaveManageAction,forumAction,postAction,readAction,delAttachAction,votePostAction,voteOptAction,postOptAction,moveForumAction,boardSaveAction,subsAction,forumManageAction,postWaitAuditAction,manageAdvanceAction,forumSearchAction,userInfoAction,inAction,onlineAction,userShowAction,sysNumStatAction,refineAction,boardPasswdAction]; root of BeanFactory hierarchy
+2012-12-06 09:58:29,361 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - 197 beans defined in application context [Root WebApplicationContext]
+2012-12-06 09:58:29,897 [main] [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] [INFO] - Loading properties file from class path resource [init.properties]
+2012-12-06 09:58:29,938 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[com.laoer.bbscs.web.action.BaseAction]]
+2012-12-06 09:58:29,942 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6d0040]
+2012-12-06 09:58:29,957 [main] [org.springframework.ui.context.support.UiApplicationContextUtils] [INFO] - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@eaf40c]
+2012-12-06 09:58:29,963 [main] [org.springframework.beans.factory.support.DefaultListableBeanFactory] [INFO] - Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [placeholderConfig,dataSource,sessionFactory,myTransactionManager,messageSource,sysOptionsValues,sysConfig,userConfig,forumConfig,sysStatService,userPermissionCache,sysListObjCache,boardCache,postCache,ipSeeker,ajaxMessagesJson,templateMail,userInfoFileIO,forumUploadFile,commendFileIO,subscibeQueue,tempConfiguration,userInfoDAO,configDAO,boardDAO,boardPermissionDAO,permissionDAO,roleDAO,userGroupDAO,userOnlineDAO,loginErrorDAO,userLevelDAO,boardSaveDAO,friendDAO,noteDAO,bookMarkDAO,forumMainDAO,forumHistoryDAO,subscibeDAO,voteDAO,voteItemDAO,voteUserDAO,forumBuyDAO,agreeAgainstDAO,commendDAO,boardAuthUserDAO,sysNumStatDAO,userTopDAO,eliteDAO,forumArchivesDAO,txProxyTemplate,userTarget,configTarget,permissionServiceTarget,roleServiceTarget,userGroupServiceTarget,userOnlineServiceTarget,loginErrorServiceTarget,userLevelServiceTarget,boardTarget,boardPermissionServiceTarget,boardSaveServiceTarget,friendServiceTarget,noteServiceTarget,bookMarkServiceTarget,forumServiceTarget,forumHistoryServiceTarget,subscibeServiceTarget,voteServiceTarget,voteItemServiceTarget,voteUserServiceTarget,agreeAgainstServiceTarget,commendServiceTarget,boardAuthUserServiceTarget,sysNumStatServiceTarget,userTopServiceTarget,eliteServiceTarget,forumArchivesServiceTarget,userService,configService,permissionService,roleService,userGroupService,userOnlineService,loginErrorService,userLevelService,boardService,boardPermissionService,boardSaveService,friendService,bookMarkService,forumService,forumHistoryService,subscibeService,voteService,voteItemService,voteUserService,agreeAgainstService,commendService,boardAuthUserService,sysNumStatService,userTopService,eliteService,forumArchivesService,friendFactory,noteService,noteFactory,bookMarkFactory,subscibeFactory,boardCount,loginErrorClear,voteUserClear,forumHistoryTimer,userOnlineClear,subscibeSend,boardCountTimerTask,loginErrorClearTimerTask,voteUserClearTimerTask,forumHistoryTimerTask,userOnlineClearTimerTask,subscibeSendTimerTask,timerFactory,sysNumStatJob,userTopFileJob,forumArchivesJob,sysNumStatJobCronTrigger,userTopFileJobCronTrigger,forumArchivesJobCronTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,regAction,regValidateAction,checkUserNameAction,loginAction,adminLogoutAction,adminOpenSetAction,adminWebsetAction,adminBaseSetAction,adminDateTimeFormatSetAction,adminCookiePassSetAction,adminScreenSetAction,adminEmailSetAction,adminUserRegSetAction,adminUserProSetAction,adminFaceSetAction,adminForbidSetAction,adminPostSetAction,adminAttachSetAction,adminVoteSetAction,adminPmSetAction,adminForumViewSetAction,adminPostViewSetAction,adminPostHiddenSetAction,adminUOTimeSetAction,adminUserLevelAction,adminBoardListAction,adminBoardSetAction,adminBoardMasterListAction,adminBoardMasterSetAction,adminBoardTagAction,adminBoardUgAction,adminPermissionAction,adminRoleAction,adminUgSetAction,adminUserSearchAction,nagAction,logoutAction,signSetAction,nickNameSetAction,userConfigSetAction,friendSetAction,noteAction,bookMarkAction,userFaceAction,userDetailSetAction,cpasswdAction,boardSaveManageAction,forumAction,postAction,readAction,delAttachAction,votePostAction,voteOptAction,postOptAction,moveForumAction,boardSaveAction,subsAction,forumManageAction,postWaitAuditAction,manageAdvanceAction,forumSearchAction,userInfoAction,inAction,onlineAction,userShowAction,sysNumStatAction,refineAction,boardPasswdAction]; root of BeanFactory hierarchy]
+2012-12-06 09:58:30,069 [main] [com.mchange.v2.log.MLog] [INFO] - MLog clients using log4j logging.
+2012-12-06 09:58:30,471 [main] [com.mchange.v2.c3p0.C3P0Registry] [INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2012-12-06 09:58:30,637 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2012-12-06 09:58:30,641 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2012-12-06 09:58:30,643 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2012-12-06 09:58:30,676 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2012-12-06 09:58:30,887 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserInfo -> bbscs_userinfo
+2012-12-06 09:58:30,915 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserDetail -> bbscs_userdetail
+2012-12-06 09:58:31,027 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Config -> bbscs_config
+2012-12-06 09:58:31,046 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Board -> bbscs_board
+2012-12-06 09:58:31,055 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardMaster -> bbscs_boardmaster
+2012-12-06 09:58:31,063 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardTag -> bbscs_boardtag
+2012-12-06 09:58:31,076 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Permission -> bbscs_permission
+2012-12-06 09:58:31,083 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Role -> bbscs_role
+2012-12-06 09:58:31,089 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserGroup -> bbscs_usergroup
+2012-12-06 09:58:31,091 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.laoer.bbscs.bean.UserGroup.roles -> bbscs_grouprole
+2012-12-06 09:58:31,098 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserOnline -> bbscs_useronline
+2012-12-06 09:58:31,109 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.LoginError -> bbscs_loginerror
+2012-12-06 09:58:31,115 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardPermission -> bbscs_boardpermission
+2012-12-06 09:58:31,121 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserLevel -> bbscs_userlevel
+2012-12-06 09:58:31,127 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardSave -> bbscs_boardsave
+2012-12-06 09:58:31,134 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Friend -> bbscs_friend
+2012-12-06 09:58:31,141 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Note -> bbscs_note
+2012-12-06 09:58:31,147 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BookMark -> bbscs_bookmark
+2012-12-06 09:58:31,154 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.ForumMain -> bbscs_forum
+2012-12-06 09:58:31,162 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.ForumHistory -> bbscs_forum_history
+2012-12-06 09:58:31,171 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Subscibe -> bbscs_subscibe
+2012-12-06 09:58:31,175 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Vote -> bbscs_vote
+2012-12-06 09:58:31,183 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.VoteItem -> bbscs_voteitem
+2012-12-06 09:58:31,188 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.VoteUser -> bbscs_voteuser
+2012-12-06 09:58:31,200 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.AgreeAgainst -> bbscs_agreeagainst
+2012-12-06 09:58:31,206 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Commend -> bbscs_commend
+2012-12-06 09:58:31,212 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.ForumBuy -> bbscs_forumbuy
+2012-12-06 09:58:31,217 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardAuthUser -> bbscs_boardauthuser
+2012-12-06 09:58:31,222 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.SysNumStat -> bbscs_sysnumstat
+2012-12-06 09:58:31,227 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserTop -> bbscs_usertop
+2012-12-06 09:58:31,233 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Elite -> bbscs_elite
+2012-12-06 09:58:31,234 [main] [org.springframework.orm.hibernate3.LocalSessionFactoryBean] [INFO] - Building new Hibernate SessionFactory
+2012-12-06 09:58:31,235 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.laoer.bbscs.bean.Board.boardMaster -> bbscs_boardmaster
+2012-12-06 09:58:31,236 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.laoer.bbscs.bean.Board.boardTag -> bbscs_boardtag
+2012-12-06 09:58:31,256 [main] [org.hibernate.connection.ConnectionProviderFactory] [INFO] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2012-12-06 09:58:31,343 [main] [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0z08rui45bt1itjlsr|c3c315, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0z08rui45bt1itjlsr|c3c315, idleConnectionTestPeriod -> 900, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/bbscs8?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 10, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2012-12-06 09:59:00,695 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#5] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1ca209e -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3376)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3308)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:894)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3808)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1256)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2032)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:729)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:00,695 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@c59ad5 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3376)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3308)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:894)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3808)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1256)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2032)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:729)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:00,695 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#3] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@13829d5 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3376)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3308)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:894)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3808)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1256)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2032)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:729)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:00,723 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 0, SQLState: null
+2012-12-06 09:59:00,879 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - Connections could not be acquired from the underlying database!
+2012-12-06 09:59:00,879 [main] [org.hibernate.cfg.SettingsFactory] [WARN] - Could not obtain connection metadata
+java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:529)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:84)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2009)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1292)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:804)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:744)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1085)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:429)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:250)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:141)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:247)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:161)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:346)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.refresh(AbstractRefreshableWebApplicationContext.java:156)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:246)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:184)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:451)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:124)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1219)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:421)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:496)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:156)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:120)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:156)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:119)
+	at org.mortbay.jetty.Server.doStart(Server.java:228)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.xml.XmlConfiguration.main(XmlConfiguration.java:929)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mortbay.start.Main.invokeMain(Main.java:183)
+	at org.mortbay.start.Main.start(Main.java:497)
+	at org.mortbay.start.Main.main(Main.java:115)
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1319)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 43 more
+2012-12-06 09:59:00,985 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.MySQLMyISAMDialect
+2012-12-06 09:59:00,989 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2012-12-06 09:59:00,991 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-12-06 09:59:00,991 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2012-12-06 09:59:00,992 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2012-12-06 09:59:00,992 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: disabled
+2012-12-06 09:59:00,993 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): disabled
+2012-12-06 09:59:00,993 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC result set fetch size: 50
+2012-12-06 09:59:00,993 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: on_close
+2012-12-06 09:59:00,993 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Maximum outer join fetch depth: 2
+2012-12-06 09:59:00,994 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2012-12-06 09:59:00,994 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2012-12-06 09:59:00,994 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2012-12-06 09:59:00,994 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-12-06 09:59:00,998 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2012-12-06 09:59:00,998 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2012-12-06 09:59:00,999 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2012-12-06 09:59:00,999 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2012-12-06 09:59:01,000 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2012-12-06 09:59:01,000 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2012-12-06 09:59:01,000 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2012-12-06 09:59:01,000 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2012-12-06 09:59:01,004 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2012-12-06 09:59:01,004 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2012-12-06 09:59:01,004 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2012-12-06 09:59:01,005 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2012-12-06 09:59:01,052 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2012-12-06 09:59:01,281 [main] [org.hibernate.tuple.entity.EntityMetamodel] [INFO] - lazy property fetching available for: com.laoer.bbscs.bean.UserInfo
+2012-12-06 09:59:01,579 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2012-12-06 09:59:01,639 [main] [org.springframework.orm.hibernate3.HibernateTransactionManager] [INFO] - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0z08rui45bt1itjlsr|c3c315, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0z08rui45bt1itjlsr|c3c315, idleConnectionTestPeriod -> 900, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/bbscs8?useUnicode=true&characterEncoding=UTF-8, lastAcquisitionFailureDefaultUser -> java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 10, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+2012-12-06 09:59:01,682 [main] [org.springframework.aop.framework.DefaultAopProxyFactory] [INFO] - CGLIB2 available: proxyTargetClass feature enabled
+2012-12-06 09:59:01,743 [main] [com.laoer.bbscs.service.config.SysConfig] [INFO] - Load sys config...
+2012-12-06 09:59:30,876 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#7] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@89ec59 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3376)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3308)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:894)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3808)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1256)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2032)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:729)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:30,876 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#9] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@e931d9 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3376)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3308)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:894)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3808)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1256)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2032)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:729)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:30,887 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 0, SQLState: null
+2012-12-06 09:59:30,888 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - Connections could not be acquired from the underlying database!
+2012-12-06 09:59:30,888 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f9104a -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3376)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3308)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:894)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3808)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1256)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2032)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:729)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:30,889 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 0, SQLState: null
+2012-12-06 09:59:30,891 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - Connections could not be acquired from the underlying database!
+2012-12-06 09:59:59,957 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@15dd32a -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLException: Access denied for user 'laoer'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1056)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3376)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3308)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:894)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3808)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1256)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2032)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:729)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:283)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:59,960 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 0, SQLState: null
+2012-12-06 09:59:59,960 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - Connections could not be acquired from the underlying database!
+2012-12-06 09:59:59,960 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 0, SQLState: null
+2012-12-06 09:59:59,960 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - Connections could not be acquired from the underlying database!
+2012-12-06 09:59:59,961 [main] [org.springframework.beans.factory.support.DefaultListableBeanFactory] [INFO] - Destroying singletons in {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [placeholderConfig,dataSource,sessionFactory,myTransactionManager,messageSource,sysOptionsValues,sysConfig,userConfig,forumConfig,sysStatService,userPermissionCache,sysListObjCache,boardCache,postCache,ipSeeker,ajaxMessagesJson,templateMail,userInfoFileIO,forumUploadFile,commendFileIO,subscibeQueue,tempConfiguration,userInfoDAO,configDAO,boardDAO,boardPermissionDAO,permissionDAO,roleDAO,userGroupDAO,userOnlineDAO,loginErrorDAO,userLevelDAO,boardSaveDAO,friendDAO,noteDAO,bookMarkDAO,forumMainDAO,forumHistoryDAO,subscibeDAO,voteDAO,voteItemDAO,voteUserDAO,forumBuyDAO,agreeAgainstDAO,commendDAO,boardAuthUserDAO,sysNumStatDAO,userTopDAO,eliteDAO,forumArchivesDAO,txProxyTemplate,userTarget,configTarget,permissionServiceTarget,roleServiceTarget,userGroupServiceTarget,userOnlineServiceTarget,loginErrorServiceTarget,userLevelServiceTarget,boardTarget,boardPermissionServiceTarget,boardSaveServiceTarget,friendServiceTarget,noteServiceTarget,bookMarkServiceTarget,forumServiceTarget,forumHistoryServiceTarget,subscibeServiceTarget,voteServiceTarget,voteItemServiceTarget,voteUserServiceTarget,agreeAgainstServiceTarget,commendServiceTarget,boardAuthUserServiceTarget,sysNumStatServiceTarget,userTopServiceTarget,eliteServiceTarget,forumArchivesServiceTarget,userService,configService,permissionService,roleService,userGroupService,userOnlineService,loginErrorService,userLevelService,boardService,boardPermissionService,boardSaveService,friendService,bookMarkService,forumService,forumHistoryService,subscibeService,voteService,voteItemService,voteUserService,agreeAgainstService,commendService,boardAuthUserService,sysNumStatService,userTopService,eliteService,forumArchivesService,friendFactory,noteService,noteFactory,bookMarkFactory,subscibeFactory,boardCount,loginErrorClear,voteUserClear,forumHistoryTimer,userOnlineClear,subscibeSend,boardCountTimerTask,loginErrorClearTimerTask,voteUserClearTimerTask,forumHistoryTimerTask,userOnlineClearTimerTask,subscibeSendTimerTask,timerFactory,sysNumStatJob,userTopFileJob,forumArchivesJob,sysNumStatJobCronTrigger,userTopFileJobCronTrigger,forumArchivesJobCronTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,regAction,regValidateAction,checkUserNameAction,loginAction,adminLogoutAction,adminOpenSetAction,adminWebsetAction,adminBaseSetAction,adminDateTimeFormatSetAction,adminCookiePassSetAction,adminScreenSetAction,adminEmailSetAction,adminUserRegSetAction,adminUserProSetAction,adminFaceSetAction,adminForbidSetAction,adminPostSetAction,adminAttachSetAction,adminVoteSetAction,adminPmSetAction,adminForumViewSetAction,adminPostViewSetAction,adminPostHiddenSetAction,adminUOTimeSetAction,adminUserLevelAction,adminBoardListAction,adminBoardSetAction,adminBoardMasterListAction,adminBoardMasterSetAction,adminBoardTagAction,adminBoardUgAction,adminPermissionAction,adminRoleAction,adminUgSetAction,adminUserSearchAction,nagAction,logoutAction,signSetAction,nickNameSetAction,userConfigSetAction,friendSetAction,noteAction,bookMarkAction,userFaceAction,userDetailSetAction,cpasswdAction,boardSaveManageAction,forumAction,postAction,readAction,delAttachAction,votePostAction,voteOptAction,postOptAction,moveForumAction,boardSaveAction,subsAction,forumManageAction,postWaitAuditAction,manageAdvanceAction,forumSearchAction,userInfoAction,inAction,onlineAction,userShowAction,sysNumStatAction,refineAction,boardPasswdAction]; root of BeanFactory hierarchy}
+2012-12-06 09:59:59,966 [main] [org.springframework.orm.hibernate3.LocalSessionFactoryBean] [INFO] - Closing Hibernate SessionFactory
+2012-12-06 09:59:59,966 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - closing
+2012-12-06 09:59:59,968 [main] [org.springframework.web.context.ContextLoader] [ERROR] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysConfig' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.laoer.bbscs.service.config.SysConfig]: Constructor threw exception; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection
+Caused by: 
+org.springframework.beans.BeanInstantiationException: Could not instantiate bean class [com.laoer.bbscs.service.config.SysConfig]: Constructor threw exception; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection
+Caused by: 
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Cannot open connection
+Caused by: 
+org.hibernate.exception.GenericJDBCException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:103)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:91)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:29)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:424)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:144)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:119)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:57)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1326)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:497)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:349)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:255)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:102)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:176)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:210)
+	at $Proxy1.findConfigs(Unknown Source)
+	at com.laoer.bbscs.service.config.SysConfig.loadConfigs(SysConfig.java:53)
+	at com.laoer.bbscs.service.config.SysConfig.<init>(SysConfig.java:48)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:84)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:71)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:150)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:683)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:388)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:250)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:141)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:247)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:161)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:273)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:346)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.refresh(AbstractRefreshableWebApplicationContext.java:156)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:246)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:184)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:49)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:451)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:124)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1219)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:421)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:496)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:156)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:120)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:156)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:119)
+	at org.mortbay.jetty.Server.doStart(Server.java:228)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:40)
+	at org.mortbay.xml.XmlConfiguration.main(XmlConfiguration.java:929)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mortbay.start.Main.invokeMain(Main.java:183)
+	at org.mortbay.start.Main.start(Main.java:497)
+	at org.mortbay.start.Main.main(Main.java:115)
+Caused by: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:529)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:421)
+	... 55 more
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1319)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 58 more
+2012-12-06 09:59:59,970 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#7] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool@bf7916 -- Thread unexpectedly interrupted while performing an acquisition attempt.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 09:59:59,970 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#9] [com.mchange.v2.resourcepool.BasicResourcePool] [WARN] - com.mchange.v2.resourcepool.BasicResourcePool@bf7916 -- Thread unexpectedly interrupted while performing an acquisition attempt.
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2012-12-06 10:03:04,956 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Application Run Path:C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/
+2012-12-06 10:03:04,957 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Use Urlrewrite:false
+2012-12-06 10:03:04,957 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Use Cluster:false
+2012-12-06 10:03:04,957 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - SERVLET MAPPING:*.bbscs
+2012-12-06 10:03:04,960 [main] [com.laoer.bbscs.web.servlet.SysListener] [INFO] - Post Storage Mode:1
+2012-12-06 10:03:04,972 [main] [org.springframework.web.context.ContextLoader] [INFO] - Root WebApplicationContext: initialization started
+2012-12-06 10:03:05,014 [main] [org.springframework.core.CollectionFactory] [INFO] - JDK 1.4+ collections available
+2012-12-06 10:03:05,035 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2012-12-06 10:03:05,176 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from ServletContext resource [/WEB-INF/action-servlet.xml]
+2012-12-06 10:03:05,203 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [placeholderConfig,dataSource,sessionFactory,myTransactionManager,messageSource,sysOptionsValues,sysConfig,userConfig,forumConfig,sysStatService,userPermissionCache,sysListObjCache,boardCache,postCache,ipSeeker,ajaxMessagesJson,templateMail,userInfoFileIO,forumUploadFile,commendFileIO,subscibeQueue,tempConfiguration,userInfoDAO,configDAO,boardDAO,boardPermissionDAO,permissionDAO,roleDAO,userGroupDAO,userOnlineDAO,loginErrorDAO,userLevelDAO,boardSaveDAO,friendDAO,noteDAO,bookMarkDAO,forumMainDAO,forumHistoryDAO,subscibeDAO,voteDAO,voteItemDAO,voteUserDAO,forumBuyDAO,agreeAgainstDAO,commendDAO,boardAuthUserDAO,sysNumStatDAO,userTopDAO,eliteDAO,forumArchivesDAO,txProxyTemplate,userTarget,configTarget,permissionServiceTarget,roleServiceTarget,userGroupServiceTarget,userOnlineServiceTarget,loginErrorServiceTarget,userLevelServiceTarget,boardTarget,boardPermissionServiceTarget,boardSaveServiceTarget,friendServiceTarget,noteServiceTarget,bookMarkServiceTarget,forumServiceTarget,forumHistoryServiceTarget,subscibeServiceTarget,voteServiceTarget,voteItemServiceTarget,voteUserServiceTarget,agreeAgainstServiceTarget,commendServiceTarget,boardAuthUserServiceTarget,sysNumStatServiceTarget,userTopServiceTarget,eliteServiceTarget,forumArchivesServiceTarget,userService,configService,permissionService,roleService,userGroupService,userOnlineService,loginErrorService,userLevelService,boardService,boardPermissionService,boardSaveService,friendService,bookMarkService,forumService,forumHistoryService,subscibeService,voteService,voteItemService,voteUserService,agreeAgainstService,commendService,boardAuthUserService,sysNumStatService,userTopService,eliteService,forumArchivesService,friendFactory,noteService,noteFactory,bookMarkFactory,subscibeFactory,boardCount,loginErrorClear,voteUserClear,forumHistoryTimer,userOnlineClear,subscibeSend,boardCountTimerTask,loginErrorClearTimerTask,voteUserClearTimerTask,forumHistoryTimerTask,userOnlineClearTimerTask,subscibeSendTimerTask,timerFactory,sysNumStatJob,userTopFileJob,forumArchivesJob,sysNumStatJobCronTrigger,userTopFileJobCronTrigger,forumArchivesJobCronTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,regAction,regValidateAction,checkUserNameAction,loginAction,adminLogoutAction,adminOpenSetAction,adminWebsetAction,adminBaseSetAction,adminDateTimeFormatSetAction,adminCookiePassSetAction,adminScreenSetAction,adminEmailSetAction,adminUserRegSetAction,adminUserProSetAction,adminFaceSetAction,adminForbidSetAction,adminPostSetAction,adminAttachSetAction,adminVoteSetAction,adminPmSetAction,adminForumViewSetAction,adminPostViewSetAction,adminPostHiddenSetAction,adminUOTimeSetAction,adminUserLevelAction,adminBoardListAction,adminBoardSetAction,adminBoardMasterListAction,adminBoardMasterSetAction,adminBoardTagAction,adminBoardUgAction,adminPermissionAction,adminRoleAction,adminUgSetAction,adminUserSearchAction,nagAction,logoutAction,signSetAction,nickNameSetAction,userConfigSetAction,friendSetAction,noteAction,bookMarkAction,userFaceAction,userDetailSetAction,cpasswdAction,boardSaveManageAction,forumAction,postAction,readAction,delAttachAction,votePostAction,voteOptAction,postOptAction,moveForumAction,boardSaveAction,subsAction,forumManageAction,postWaitAuditAction,manageAdvanceAction,forumSearchAction,userInfoAction,inAction,onlineAction,userShowAction,sysNumStatAction,refineAction,boardPasswdAction]; root of BeanFactory hierarchy
+2012-12-06 10:03:05,213 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - 197 beans defined in application context [Root WebApplicationContext]
+2012-12-06 10:03:05,372 [main] [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] [INFO] - Loading properties file from class path resource [init.properties]
+2012-12-06 10:03:05,396 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[com.laoer.bbscs.web.action.BaseAction]]
+2012-12-06 10:03:05,401 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@8c4a77]
+2012-12-06 10:03:05,404 [main] [org.springframework.ui.context.support.UiApplicationContextUtils] [INFO] - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@b1cc87]
+2012-12-06 10:03:05,410 [main] [org.springframework.beans.factory.support.DefaultListableBeanFactory] [INFO] - Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [placeholderConfig,dataSource,sessionFactory,myTransactionManager,messageSource,sysOptionsValues,sysConfig,userConfig,forumConfig,sysStatService,userPermissionCache,sysListObjCache,boardCache,postCache,ipSeeker,ajaxMessagesJson,templateMail,userInfoFileIO,forumUploadFile,commendFileIO,subscibeQueue,tempConfiguration,userInfoDAO,configDAO,boardDAO,boardPermissionDAO,permissionDAO,roleDAO,userGroupDAO,userOnlineDAO,loginErrorDAO,userLevelDAO,boardSaveDAO,friendDAO,noteDAO,bookMarkDAO,forumMainDAO,forumHistoryDAO,subscibeDAO,voteDAO,voteItemDAO,voteUserDAO,forumBuyDAO,agreeAgainstDAO,commendDAO,boardAuthUserDAO,sysNumStatDAO,userTopDAO,eliteDAO,forumArchivesDAO,txProxyTemplate,userTarget,configTarget,permissionServiceTarget,roleServiceTarget,userGroupServiceTarget,userOnlineServiceTarget,loginErrorServiceTarget,userLevelServiceTarget,boardTarget,boardPermissionServiceTarget,boardSaveServiceTarget,friendServiceTarget,noteServiceTarget,bookMarkServiceTarget,forumServiceTarget,forumHistoryServiceTarget,subscibeServiceTarget,voteServiceTarget,voteItemServiceTarget,voteUserServiceTarget,agreeAgainstServiceTarget,commendServiceTarget,boardAuthUserServiceTarget,sysNumStatServiceTarget,userTopServiceTarget,eliteServiceTarget,forumArchivesServiceTarget,userService,configService,permissionService,roleService,userGroupService,userOnlineService,loginErrorService,userLevelService,boardService,boardPermissionService,boardSaveService,friendService,bookMarkService,forumService,forumHistoryService,subscibeService,voteService,voteItemService,voteUserService,agreeAgainstService,commendService,boardAuthUserService,sysNumStatService,userTopService,eliteService,forumArchivesService,friendFactory,noteService,noteFactory,bookMarkFactory,subscibeFactory,boardCount,loginErrorClear,voteUserClear,forumHistoryTimer,userOnlineClear,subscibeSend,boardCountTimerTask,loginErrorClearTimerTask,voteUserClearTimerTask,forumHistoryTimerTask,userOnlineClearTimerTask,subscibeSendTimerTask,timerFactory,sysNumStatJob,userTopFileJob,forumArchivesJob,sysNumStatJobCronTrigger,userTopFileJobCronTrigger,forumArchivesJobCronTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,regAction,regValidateAction,checkUserNameAction,loginAction,adminLogoutAction,adminOpenSetAction,adminWebsetAction,adminBaseSetAction,adminDateTimeFormatSetAction,adminCookiePassSetAction,adminScreenSetAction,adminEmailSetAction,adminUserRegSetAction,adminUserProSetAction,adminFaceSetAction,adminForbidSetAction,adminPostSetAction,adminAttachSetAction,adminVoteSetAction,adminPmSetAction,adminForumViewSetAction,adminPostViewSetAction,adminPostHiddenSetAction,adminUOTimeSetAction,adminUserLevelAction,adminBoardListAction,adminBoardSetAction,adminBoardMasterListAction,adminBoardMasterSetAction,adminBoardTagAction,adminBoardUgAction,adminPermissionAction,adminRoleAction,adminUgSetAction,adminUserSearchAction,nagAction,logoutAction,signSetAction,nickNameSetAction,userConfigSetAction,friendSetAction,noteAction,bookMarkAction,userFaceAction,userDetailSetAction,cpasswdAction,boardSaveManageAction,forumAction,postAction,readAction,delAttachAction,votePostAction,voteOptAction,postOptAction,moveForumAction,boardSaveAction,subsAction,forumManageAction,postWaitAuditAction,manageAdvanceAction,forumSearchAction,userInfoAction,inAction,onlineAction,userShowAction,sysNumStatAction,refineAction,boardPasswdAction]; root of BeanFactory hierarchy]
+2012-12-06 10:03:05,429 [main] [com.mchange.v2.log.MLog] [INFO] - MLog clients using log4j logging.
+2012-12-06 10:03:05,495 [main] [com.mchange.v2.c3p0.C3P0Registry] [INFO] - Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+2012-12-06 10:03:05,558 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2012-12-06 10:03:05,561 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2012-12-06 10:03:05,563 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2012-12-06 10:03:05,566 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2012-12-06 10:03:05,696 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserInfo -> bbscs_userinfo
+2012-12-06 10:03:05,723 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserDetail -> bbscs_userdetail
+2012-12-06 10:03:05,780 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Config -> bbscs_config
+2012-12-06 10:03:05,795 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Board -> bbscs_board
+2012-12-06 10:03:05,806 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardMaster -> bbscs_boardmaster
+2012-12-06 10:03:05,814 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardTag -> bbscs_boardtag
+2012-12-06 10:03:05,820 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Permission -> bbscs_permission
+2012-12-06 10:03:05,835 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Role -> bbscs_role
+2012-12-06 10:03:05,844 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserGroup -> bbscs_usergroup
+2012-12-06 10:03:05,845 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.laoer.bbscs.bean.UserGroup.roles -> bbscs_grouprole
+2012-12-06 10:03:05,851 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserOnline -> bbscs_useronline
+2012-12-06 10:03:05,860 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.LoginError -> bbscs_loginerror
+2012-12-06 10:03:05,866 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardPermission -> bbscs_boardpermission
+2012-12-06 10:03:05,871 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserLevel -> bbscs_userlevel
+2012-12-06 10:03:05,877 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardSave -> bbscs_boardsave
+2012-12-06 10:03:05,883 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Friend -> bbscs_friend
+2012-12-06 10:03:05,891 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Note -> bbscs_note
+2012-12-06 10:03:05,897 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BookMark -> bbscs_bookmark
+2012-12-06 10:03:05,905 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.ForumMain -> bbscs_forum
+2012-12-06 10:03:05,913 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.ForumHistory -> bbscs_forum_history
+2012-12-06 10:03:05,920 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Subscibe -> bbscs_subscibe
+2012-12-06 10:03:05,925 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Vote -> bbscs_vote
+2012-12-06 10:03:05,932 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.VoteItem -> bbscs_voteitem
+2012-12-06 10:03:05,937 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.VoteUser -> bbscs_voteuser
+2012-12-06 10:03:05,942 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.AgreeAgainst -> bbscs_agreeagainst
+2012-12-06 10:03:05,947 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Commend -> bbscs_commend
+2012-12-06 10:03:05,953 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.ForumBuy -> bbscs_forumbuy
+2012-12-06 10:03:05,958 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.BoardAuthUser -> bbscs_boardauthuser
+2012-12-06 10:03:05,963 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.SysNumStat -> bbscs_sysnumstat
+2012-12-06 10:03:05,968 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.UserTop -> bbscs_usertop
+2012-12-06 10:03:05,973 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.laoer.bbscs.bean.Elite -> bbscs_elite
+2012-12-06 10:03:05,973 [main] [org.springframework.orm.hibernate3.LocalSessionFactoryBean] [INFO] - Building new Hibernate SessionFactory
+2012-12-06 10:03:05,974 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.laoer.bbscs.bean.Board.boardMaster -> bbscs_boardmaster
+2012-12-06 10:03:05,976 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.laoer.bbscs.bean.Board.boardTag -> bbscs_boardtag
+2012-12-06 10:03:05,986 [main] [org.hibernate.connection.ConnectionProviderFactory] [INFO] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2012-12-06 10:03:06,046 [main] [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0z08ruia1ri154let7|a00185, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0z08ruia1ri154let7|a00185, idleConnectionTestPeriod -> 900, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@localhost:1521:ora10g, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 10, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2012-12-06 10:03:06,276 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2012-12-06 10:03:06,277 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC driver: Oracle JDBC driver, version: 10.2.0.2.0
+2012-12-06 10:03:06,289 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.Oracle9Dialect
+2012-12-06 10:03:06,294 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2012-12-06 10:03:06,295 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-12-06 10:03:06,296 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2012-12-06 10:03:06,297 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2012-12-06 10:03:06,297 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC batch size: 25
+2012-12-06 10:03:06,298 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC batch updates for versioned data: disabled
+2012-12-06 10:03:06,307 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: enabled
+2012-12-06 10:03:06,307 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): disabled
+2012-12-06 10:03:06,309 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC result set fetch size: 50
+2012-12-06 10:03:06,310 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: on_close
+2012-12-06 10:03:06,314 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2012-12-06 10:03:06,315 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2012-12-06 10:03:06,315 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2012-12-06 10:03:06,316 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-12-06 10:03:06,329 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2012-12-06 10:03:06,330 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2012-12-06 10:03:06,330 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2012-12-06 10:03:06,338 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2012-12-06 10:03:06,339 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2012-12-06 10:03:06,339 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2012-12-06 10:03:06,340 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2012-12-06 10:03:06,348 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2012-12-06 10:03:06,352 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2012-12-06 10:03:06,353 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2012-12-06 10:03:06,353 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2012-12-06 10:03:06,359 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2012-12-06 10:03:06,378 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2012-12-06 10:03:06,542 [main] [org.hibernate.tuple.entity.EntityMetamodel] [INFO] - lazy property fetching available for: com.laoer.bbscs.bean.UserInfo
+2012-12-06 10:03:06,801 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2012-12-06 10:03:06,836 [main] [org.springframework.orm.hibernate3.HibernateTransactionManager] [INFO] - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge0z08ruia1ri154let7|a00185, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0z08ruia1ri154let7|a00185, idleConnectionTestPeriod -> 900, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@localhost:1521:ora10g, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 10, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+2012-12-06 10:03:06,844 [main] [org.springframework.aop.framework.DefaultAopProxyFactory] [INFO] - CGLIB2 available: proxyTargetClass feature enabled
+2012-12-06 10:03:06,887 [main] [com.laoer.bbscs.service.config.SysConfig] [INFO] - Load sys config...
+2012-12-06 10:03:07,340 [main] [com.laoer.bbscs.service.config.SysConfig] [INFO] - Load sys config complete,111 items is loaded.
+2012-12-06 10:03:07,348 [main] [com.laoer.bbscs.service.imp.OsCacheImp] [INFO] - Init Cache...
+2012-12-06 10:03:07,470 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Constructed GeneralCacheAdministrator()
+2012-12-06 10:03:07,471 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Creating new cache
+2012-12-06 10:03:07,480 [main] [com.laoer.bbscs.service.imp.OsCacheImp] [INFO] - Init Cache...
+2012-12-06 10:03:07,490 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Constructed GeneralCacheAdministrator()
+2012-12-06 10:03:07,490 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Creating new cache
+2012-12-06 10:03:07,491 [main] [com.laoer.bbscs.service.imp.OsCacheImp] [INFO] - Init Cache...
+2012-12-06 10:03:07,498 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Constructed GeneralCacheAdministrator()
+2012-12-06 10:03:07,498 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Creating new cache
+2012-12-06 10:03:07,499 [main] [com.laoer.bbscs.service.imp.OsCacheImp] [INFO] - Init Cache...
+2012-12-06 10:03:07,500 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Constructed GeneralCacheAdministrator()
+2012-12-06 10:03:07,501 [main] [com.opensymphony.oscache.general.GeneralCacheAdministrator] [INFO] - Creating new cache
+2012-12-06 10:03:08,176 [main] [org.springframework.scheduling.timer.TimerFactoryBean] [INFO] - Initializing Timer
+2012-12-06 10:03:08,277 [main] [org.quartz.simpl.SimpleThreadPool] [INFO] - Job execution threads will use class loader of thread: main
+2012-12-06 10:03:08,292 [main] [org.quartz.core.QuartzScheduler] [INFO] - Quartz Scheduler v.1.5.2 created.
+2012-12-06 10:03:08,293 [main] [org.quartz.simpl.RAMJobStore] [INFO] - RAMJobStore initialized.
+2012-12-06 10:03:08,294 [main] [org.quartz.impl.StdSchedulerFactory] [INFO] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2012-12-06 10:03:08,294 [main] [org.quartz.impl.StdSchedulerFactory] [INFO] - Quartz scheduler version: 1.5.2
+2012-12-06 10:03:08,295 [main] [org.quartz.core.QuartzScheduler] [INFO] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@97f621
+2012-12-06 10:03:08,298 [main] [org.springframework.scheduling.quartz.SchedulerFactoryBean] [INFO] - Starting Quartz Scheduler now
+2012-12-06 10:03:08,299 [main] [org.quartz.core.QuartzScheduler] [INFO] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2012-12-06 10:03:08,299 [main] [org.springframework.web.context.ContextLoader] [INFO] - Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+2012-12-06 10:03:08,300 [main] [org.springframework.web.context.ContextLoader] [INFO] - Root WebApplicationContext: initialization completed in 3328 ms
+2012-12-06 10:03:08,343 [main] [org.springframework.web.filter.CharacterEncodingFilter] [INFO] - Initializing filter 'CharacterEncodingFilter'
+2012-12-06 10:03:08,347 [main] [org.springframework.web.filter.CharacterEncodingFilter] [INFO] - Filter 'CharacterEncodingFilter' configured successfully
+2012-12-06 10:03:08,352 [main] [org.springframework.orm.hibernate3.support.OpenSessionInViewFilter] [INFO] - Initializing filter 'OpenSessionInViewFilter'
+2012-12-06 10:03:08,355 [main] [org.springframework.orm.hibernate3.support.OpenSessionInViewFilter] [INFO] - Filter 'OpenSessionInViewFilter' configured successfully
+2012-12-06 10:03:08,544 [main] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] [INFO] - Parsing configuration file [struts-default.xml]
+2012-12-06 10:03:08,624 [main] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] [INFO] - Parsing configuration file [struts-plugin.xml]
+2012-12-06 10:03:08,655 [main] [com.opensymphony.xwork2.config.providers.XmlConfigurationProvider] [INFO] - Parsing configuration file [struts.xml]
+2012-12-06 10:03:08,662 [main] [org.apache.struts2.config.BeanSelectionProvider] [INFO] - Loading global messages from com.laoer.bbscs.web.action.BaseAction
+2012-12-06 10:03:08,720 [main] [org.apache.struts2.spring.StrutsSpringObjectFactory] [INFO] - Initializing Struts-Spring integration...
+2012-12-06 10:03:08,721 [main] [com.opensymphony.xwork2.spring.SpringObjectFactory] [INFO] - Setting autowire strategy to name
+2012-12-06 10:03:08,721 [main] [org.apache.struts2.spring.StrutsSpringObjectFactory] [INFO] - ... initialized Struts-Spring integration successfully
+2012-12-06 10:03:09,469 [main] [com.opensymphony.xwork2.util.ObjectTypeDeterminerFactory] [INFO] - Setting DefaultObjectTypeDeterminer as default ...
+2012-12-06 10:03:18,176 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 10:03:18,278 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 10:03:18,317 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 10:03:23,177 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 10:03:23,202 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 10:03:53,176 [timerFactory] [com.laoer.bbscs.service.task.VoteUserClearTimerTask] [INFO] - Vote user clear...
+2012-12-06 10:03:53,206 [timerFactory] [com.laoer.bbscs.service.task.VoteUserClearTimerTask] [INFO] - Vote user clear end
+2012-12-06 10:04:03,355 [btpool0-6] [com.opensymphony.xwork2.validator.ActionValidatorManagerFactory] [INFO] - Detected AnnotationActionValidatorManager, initializing it...
+2012-12-06 10:08:08,177 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:08:08,177 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:13:08,177 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:13:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:18:08,177 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:18:08,177 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:18:23,178 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 10:18:23,180 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 10:23:08,177 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:23:08,177 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:28:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:28:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:33:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:33:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:33:18,176 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 10:33:18,177 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 10:33:18,183 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 10:33:23,179 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 10:33:23,181 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 10:38:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:38:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:43:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:43:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:48:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:48:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:48:23,180 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 10:48:23,182 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 10:53:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:53:08,178 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 10:58:08,179 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 10:58:08,179 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:03:08,176 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear...
+2012-12-06 11:03:08,196 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear End
+2012-12-06 11:03:08,196 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:03:08,196 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:03:18,176 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 11:03:18,176 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 11:03:18,184 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 11:03:23,181 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 11:03:23,182 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 11:08:08,196 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:08:08,196 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:13:08,199 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:13:08,199 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:18:08,199 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:18:08,199 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:18:23,182 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 11:18:23,184 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 11:23:08,199 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:23:08,199 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:28:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:28:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:33:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:33:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:33:18,176 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 11:33:18,177 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 11:33:18,184 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 11:33:23,183 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 11:33:23,185 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 11:38:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:38:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:43:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:43:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:48:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:48:08,201 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:48:23,184 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 11:48:23,187 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 11:53:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:53:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 11:58:08,200 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 11:58:08,201 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:03:08,177 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear...
+2012-12-06 12:03:08,272 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear End
+2012-12-06 12:03:08,273 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:03:08,273 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:03:18,176 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 12:03:18,176 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 12:03:18,278 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 12:03:23,184 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 12:03:23,211 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 12:08:08,274 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:08:08,274 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:13:08,274 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:13:08,274 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:18:08,275 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:18:08,275 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:18:23,185 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 12:18:23,246 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 12:23:08,274 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:23:08,274 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:28:08,274 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:28:08,285 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:33:08,275 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:33:08,275 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:33:18,176 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 12:33:18,248 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 12:33:18,311 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 12:33:23,185 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 12:33:23,201 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 12:38:08,276 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:38:08,276 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:43:08,276 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:43:08,296 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:48:08,276 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:48:08,276 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:48:23,186 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 12:48:23,226 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 12:53:08,280 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:53:08,281 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 12:58:08,280 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 12:58:08,280 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:03:08,178 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear...
+2012-12-06 13:03:08,292 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear End
+2012-12-06 13:03:08,293 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:03:08,296 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:03:18,176 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 13:03:18,176 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 13:03:18,202 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 13:03:23,186 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 13:03:23,188 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 13:08:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:08:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:13:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:13:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:18:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:18:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:18:23,187 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 13:18:23,299 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 13:23:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:23:08,294 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:28:08,299 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:28:08,302 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:33:08,299 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:33:08,299 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:33:18,177 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 13:33:18,313 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 13:33:18,400 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 13:33:23,187 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 13:33:23,202 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 13:38:08,300 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:38:08,314 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:43:08,300 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:43:08,312 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:48:08,300 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:48:08,300 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:48:23,191 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 13:48:23,563 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 13:53:08,300 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:53:08,301 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 13:58:08,300 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 13:58:08,300 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:03:08,185 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear...
+2012-12-06 14:03:08,518 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear End
+2012-12-06 14:03:08,524 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:03:08,524 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:03:18,178 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 14:03:18,209 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 14:03:18,536 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 14:03:23,191 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 14:03:23,201 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 14:08:08,525 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:08:08,525 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:13:08,525 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:13:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:18:08,525 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:18:08,525 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:18:23,192 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 14:18:23,467 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 14:23:08,525 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:23:08,536 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:28:08,536 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:28:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:33:08,536 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:33:08,536 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:33:18,179 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 14:33:18,319 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 14:33:18,354 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 14:33:23,192 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 14:33:23,219 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 14:38:08,537 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:38:08,550 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:43:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:43:08,542 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:48:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:48:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:48:23,193 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 14:48:24,208 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 14:53:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:53:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 14:58:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 14:58:08,541 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:03:08,178 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear...
+2012-12-06 15:03:08,586 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear End
+2012-12-06 15:03:08,586 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:03:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:03:18,180 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 15:03:18,180 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 15:03:18,199 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 15:03:23,193 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 15:03:23,207 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 15:08:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:08:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:13:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:13:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:18:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:18:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:18:23,194 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 15:18:23,501 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 15:23:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:23:08,588 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:28:08,587 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:28:08,600 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:33:08,608 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:33:08,608 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:33:18,199 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 15:33:18,822 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 15:33:20,739 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 15:33:23,194 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 15:33:23,198 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 15:38:08,608 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:38:08,608 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:43:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:43:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:48:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:48:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:48:23,195 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 15:48:23,526 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 15:53:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:53:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 15:58:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 15:58:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:03:08,179 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear...
+2012-12-06 16:03:08,517 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear End
+2012-12-06 16:03:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:03:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:03:18,182 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 16:03:18,182 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 16:03:18,585 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 16:03:23,195 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 16:03:23,207 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 16:08:08,609 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:08:08,640 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:13:08,613 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:13:08,629 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:18:08,613 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:18:08,613 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:18:23,196 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 16:18:23,434 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 16:23:08,613 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:23:08,613 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:28:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:28:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:33:08,617 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:33:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:33:18,183 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 16:33:18,481 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 16:33:18,523 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 16:33:23,208 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 16:33:23,222 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 16:38:08,617 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:38:08,617 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:43:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:43:08,626 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:48:08,625 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:48:08,631 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:48:23,209 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 16:48:23,711 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 16:53:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:53:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 16:58:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 16:58:08,618 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 17:03:08,310 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear...
+2012-12-06 17:03:09,379 [timerFactory] [com.laoer.bbscs.service.task.UserOnlineClearTimerTask] [INFO] - UserOnline Clear End
+2012-12-06 17:03:09,379 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 17:03:09,379 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 17:03:18,184 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count start...
+2012-12-06 17:03:18,184 [timerFactory] [com.laoer.bbscs.service.imp.BoardServiceCacheImp] [INFO] - postMainNum:0 postNum:0
+2012-12-06 17:03:18,828 [timerFactory] [com.laoer.bbscs.service.task.BoardCountTimerTask] [INFO] - Board count end
+2012-12-06 17:03:23,209 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - Start LoginErrorClearTimerTask...
+2012-12-06 17:03:23,211 [timerFactory] [com.laoer.bbscs.service.task.LoginErrorClearTimerTask] [INFO] - End LoginErrorClearTimerTask
+2012-12-06 17:08:09,380 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 17:08:09,380 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End
+2012-12-06 17:13:09,381 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe, subscibeQueue's Num:0
+2012-12-06 17:13:09,381 [timerFactory] [com.laoer.bbscs.service.task.SubscibeSendTimerTask] [INFO] - Send Subscibe End

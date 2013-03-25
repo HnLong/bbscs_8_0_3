@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/action-servlet.xml</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/bbscs.tld</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/jsp/main.jsp</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/taglib/WebInfoTag.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/taglib/WebInfo.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/jsp/nag.jsp</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/jsp/in.jsp</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/action/Main.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/jsp/login.jsp</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/action/Login.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/taglib/InTag.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/taglib/InComponent.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/jsp/read.jsp</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/js/read.js</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/action/Read.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/web/taglib/TopicComponent.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/service/config/SysConfig.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/service/ForumService.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/webapps-bbscs/root/WEB-INF/applicationContext.xml</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/service/imp/OsCacheImp.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/service/imp/BoardServiceCacheImp.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/dao/hibernate/BoardHibernateDAO.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/dao/BoardDAO.java</file>
+        <file>file:/C:/Users/LongMin/Downloads/bbscs_8_0_3/bbscs-src/com/laoer/bbscs/dao/hibernate/BoardPermissionHibernateDAO.java</file>
+    </open-files>
+</project-private>
